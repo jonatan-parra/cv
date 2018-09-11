@@ -25,7 +25,7 @@ Complete la tabla:
 | Ilusión                | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |------------------------|-----------|------------|------------------------------------|-----------------------------|
 | black_and_white_grid   |           | Cuadros y linea https://goo.gl/yyjy2a              |  Con el clic del mouse se ve el tablero con o sin efecto visual | |
-| color_illusion         |           | Simple Little Color Illusion https://goo.gl/raCQon |  | Presionando los números del 1 al 7 el usuario puede percibir la ilusión a distintas distancias, con la tecla 0 se muestra el tablero sin el efecto visual             | |
+| color_illusion         |           | Simple Little Color Illusion https://goo.gl/raCQon |  Presionando los números del 1 al 7 el usuario puede percibir la ilusión a distintas distancias, con la tecla 0 se muestra el tablero sin el efecto visual  |            | |
 | Scintillating_grid     |           | Scintillating grid https://goo.gl/Ko4nJG           |              | |
 |                        |           |            |                                    | |
 |                        |           |            |                                    | |
