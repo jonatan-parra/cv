@@ -29,7 +29,7 @@ Complete la tabla:
 | Scintillating_grid     | Grid          | Scintillating grid: https://goo.gl/Ko4nJG           |              | |
 | disappearing_dots      | Grid          | Disappearing Dots: https://goo.gl/r9LFmT           |                                    | |
 | falling_squares        | Movement      | Falling Squares, Articulo: https://goo.gl/xTPCck Teoría de una ilusión similar: https://goo.gl/7snZGc          | Puede presionar la tecla 'r' para borrar el fondo y observar que los cuadros se mueven a la misma velocidad                                    | |
-| delvoeuf_illusion      | Geometric     | Delboeuf Illusion: http://www.michaelbach.de/ot/cog-Delboeuf/index.html   | Puede presionar la tecla 'a' para alternar los círculos exteriores y la tecla 'r' para ocultarlos                                   | |
+| delboeuf_illusion      | Geometric     | Delboeuf Illusion: http://www.michaelbach.de/ot/cog-Delboeuf/index.html   | Puede presionar la tecla 'a' para alternar los círculos exteriores y la tecla 'r' para ocultarlos                                   | |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar:
 Durante el proceso de investigación de las diferentes referencias fue posible observar que tan populares son estos tipos de ilusiones ópticas, todos los sitios a los que se hizo referencia son distintos y cada uno de ellos tiene su propio enfoque, algunas referencias explicaron el fenómeno de forma técnica y con ejemplos variados, mientras que otras estaban enfocadas a un público más general. 
