@@ -28,7 +28,7 @@ Complete la tabla:
 | color_illusion         |           | Simple Little Color Illusion https://goo.gl/raCQon |  Presionando los números del 1 al 7 el usuario puede percibir la ilusión a distintas distancias, con la tecla 0 se muestra el tablero sin el efecto visual  |            | |
 | Scintillating_grid     |           | Scintillating grid https://goo.gl/Ko4nJG           |              | |
 | disappearing_dots      | Grid          | Disappearing Dots: https://goo.gl/r9LFmT           |                                    | |
-| falling_squares        | Physiological          |  Falling Squares, Articulo: https://goo.gl/xTPCck Teoría de una ilusión similar: https://goo.gl/7snZGc          | Puede presionar la tecla 'r' para borrar el fondo y observar que los cuadros se mueven a la misma velocidad                                    | |
+| falling_squares        | Movement          |  Falling Squares, Articulo: https://goo.gl/xTPCck Teoría de una ilusión similar: https://goo.gl/7snZGc          | Puede presionar la tecla 'r' para borrar el fondo y observar que los cuadros se mueven a la misma velocidad                                    | |
 |                        |           |            |                                    | |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar:
