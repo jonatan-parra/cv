@@ -32,7 +32,7 @@ Complete la tabla:
 |                        |           |            |                                    | |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar:
-
+En proceso de investigación de las diferentes referencias fue posible observar que tan populares son estos tipos de ilusiones ópticas, todos los sitios a los que se hizo referencia son distintos y cada uno de ellos tiene su propio enfoque, algunas referencias explicaron el fenómeno de forma técnica y con ejemplos variados, mientras que otras estaban enfocadas a un público más general. 
 ## Entrega
 
 * Modo de entrega: clonar este repo y subirlo a `https://github.com/username/cv/t1`.
