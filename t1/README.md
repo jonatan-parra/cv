@@ -32,7 +32,9 @@ Complete la tabla:
 | delboeuf_illusion      | Geometric     | Delboeuf Illusion: http://www.michaelbach.de/ot/cog-Delboeuf/index.html   | Puede presionar la tecla 'a' para alternar los círculos exteriores y la tecla 'r' para ocultarlos                                   | |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar:
-Durante el proceso de investigación de las diferentes referencias fue posible observar que tan populares son estos tipos de ilusiones ópticas, todos los sitios a los que se hizo referencia son distintos y cada uno de ellos tiene su propio enfoque, algunas referencias explicaron el fenómeno de forma técnica y con ejemplos variados, mientras que otras estaban enfocadas a un público más general. 
+Durante el proceso de investigación de las diferentes referencias fue posible observar que tan populares son estos tipos de ilusiones ópticas, todos los sitios a los que se hizo referencia son distintos y cada uno de ellos tiene su propio enfoque, algunas referencias explicaron el fenómeno de forma técnica y con ejemplos variados, mientras que otras estaban enfocadas a un público más general.
+
+Nos gustaría profundizar en temas de afterimage, donde las imágenes continúan apareciendo en la visión después de que la exposición a la imagen original ha cesado. Es un interesante tema debido a diferentes tipos que existen: positivos, cuando los colores del estímulo original se conservan, y negativos en donde los colores pueden invertirse. 
 ## Entrega
 
 * Modo de entrega: clonar este repo y subirlo a `https://github.com/username/cv/t1`.
