@@ -30,8 +30,8 @@ Dos, o máximo tres si van a realizar al menos un opcional.
 Complete la tabla:
 
 | Integrante | github nick |
-|------------|-------------|
-|            |             |
+|Kevin Castro|keacastroga|
+|Jonatan Parra|jonatan360|
 
 ## Discusión
 
