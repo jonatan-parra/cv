@@ -36,8 +36,11 @@ Complete la tabla:
 
 ## Discusión
 
-Describa los resultados obtenidos. En el caso de anti-aliasing describir las técnicas exploradas, citando las referencias.
+Describa los resultados obtenidos. En el caso de anti-aliasing describir las técnicas exploradas, citando las referencias:
 
+Se observó el funcionamiento de las coordenadas baricéntricas en el proceso de rasterizar un triangulo, ademas se observo la posibilidad de interpolar las propiedades del triángulo usando las coordenadas baricéntricas, en este ejemplo se interpolan los colores sobre la superficie según los colores definidos en los vértices.
+
+Para la implementaion de anti-aliasing se uso el metodo de multisamplig definido en la pagina [algoritmo de anti-aliasing](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/rasterization-practical-implementation), tomando cuatro mustras en las esquinas de cada pixel; para cada muestra se calcula si esta dentro o no del triangulo y se guarda el numero que esta adentro en la variable inside, luego se multiplica cada componente rgb del pixel por inside y se divide por 4, se tendra el color completo si las cuatro muestras estan dentro del triangulo y si no el color se vera un poco menos intenso, el anti-aliasing puede ser prendido y apagado con la tecla 'a'. 
 ## Entrega
 
 * Modo de entrega: [Fork](https://help.github.com/articles/fork-a-repo/) la plantilla en las cuentas de los integrantes.

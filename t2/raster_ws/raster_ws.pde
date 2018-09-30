@@ -17,7 +17,7 @@ int n = 4;
 boolean triangleHint = true;
 boolean gridHint = true;
 boolean debug = false;
-boolean aa = false;
+boolean aa = true;
 
 // 3. Use FX2D, JAVA2D, P2D or P3D
 String renderer = P3D;
@@ -76,12 +76,17 @@ float edgeFunc(Vector a, Vector b, Vector c){
   return (c.x() - a.x()) * (b.y() - a.y()) - (c.y() - a.y()) * (b.x() - a.x()); 
 }
 
-boolean edgeFuncBool(Vector a, Vector b, Vector c, Vector p){
+int edgeFuncBool(Vector a, Vector b, Vector c, Vector p){
     float w1 = edgeFunc(b, c, p); 
     float w2 = edgeFunc(c, a, p); 
     float w3 = edgeFunc(a, b, p); 
-    return (w1 >= 0 && w2 >= 0 && w3 >= 0);
+    if (w1 >= 0 && w2 >= 0 && w3 >= 0)
+      return 1;
+    else
+      return 0;
 }
+
+
 // Implement this function to rasterize the triangle.
 // Coordinates are given in the frame system which has a dimension of 2^n
 void triangleRaster() {
@@ -104,53 +109,41 @@ void triangleRaster() {
   for (float y = -size; y <= size; y++){
     for (float x = -size; x <= size; x++){
       p.set(x,y);
-      boolean inside = true;
-      boolean outside = false;
-      boolean tmp;
-      if(aa){
-        tmp = edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
-        inside &= tmp;
-        outside |= tmp;
-        p.set(x,y+0.875);
-        tmp = edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
-        inside &= tmp;
-        outside |= tmp;
-        p.set(x+0.875,y);
-        tmp = edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
-        inside &= tmp;
-        outside |= tmp;
-        p.set(x+0.875,y+0.875);
-        tmp = edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
-        p.set(x,y);
-        inside &= tmp;
-        outside |= tmp;
-        color c = color(0,255,0);
-        if(outside){
-          c = color(125);
-        }
-        if(inside){
-          c = color(255);
-        }
-        
-        pushStyle();
-        stroke(c);
-        point(p.x(), p.y());
-        popStyle();
-        p.set(x,y);
-      }
       float w1 = edgeFunc(rst_v2, rst_v3, p); 
       float w2 = edgeFunc(rst_v3, rst_v1, p); 
-      float w3 = edgeFunc(rst_v1, rst_v2, p);  
+      float w3 = edgeFunc(rst_v1, rst_v2, p);
+      if(aa){
+        int  inside = 0;
+        pushStyle();
+        inside += edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
+        p.set(x,y+0.875);
+        inside += edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
+        p.set(x+0.875,y);
+        inside += edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
+        p.set(x+0.875,y+0.875);
+        inside += edgeFuncBool(rst_v1, rst_v2, rst_v3, p);
+        p.set(x,y);
+        if(inside > 0){
+          w1 /= area; 
+          w2 /= area; 
+          w3 /= area; 
+          float r = (w1 * red(cv1) + w2 * red(cv2) + w3 * red(cv3)) * inside;
+          float g = (w1 * green(cv1) + w2 * green(cv2) + w3 * green(cv3)) * inside;
+          float b = (w1 * blue(cv1) + w2 * blue(cv2) + w3 * blue(cv3)) * inside;
+          stroke(color(r/4, g/4, b/4));
+          point(p.x(), p.y());
+        }        
+        popStyle();
+      }  
       if ((w1 >= 0 && w2 >= 0 && w3 >= 0) && !aa) {            
+                pushStyle();
                 w1 /= area; 
                 w2 /= area; 
                 w3 /= area; 
                 float r = w1 * red(cv1) + w2 * red(cv2) + w3 * red(cv3);
                 float g = w1 * green(cv1) + w2 * green(cv2) + w3 * green(cv3);
                 float b = w1 * blue(cv1) + w2 * blue(cv2) + w3 * blue(cv3);
-                color c = color(r, g, b);
-                pushStyle();
-                stroke(c);
+                stroke(color(r, g, b));
                 point(p.x(), p.y());
                 popStyle();
       }
